@@ -11,6 +11,11 @@ class TriangleTest(unittest.TestCase):
 		actual = Triangle.classify(1, 3, 5)
 		expected = Triangle.Type.INVALID
 		self.assertTrue(expected == actual)
+
+	def test_equilateral(self):
+		actual = Triangle.classify(3, 3, 3)
+		expected = Triangle.Type.EQUILATERAL
+		self.assertTrue(expected == actual)
         
 	def test_scalene(self):
 		actual = Triangle.classify(2, 3, 4)
