@@ -4,15 +4,9 @@ cd "./test_suit"
 # Define the output file for both stdout and stderr
 output_file="mutation_output.log"
 
+PYTHON_EXECUTABLE=python
 
-# Check the operating system
-if [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
-    # Linux
-    PYTHON_EXECUTABLE="python3"
-elif [ "$(expr substr $(uname -s) 1 10)" = "MINGW32_NT" ]; then
-    # Windows
-    PYTHON_EXECUTABLE="python3.exe"
-fi
+# echo $PYTHON_EXECUTABLE
 
 # Use tee to capture both stdout and stderr and save them to the file
 {

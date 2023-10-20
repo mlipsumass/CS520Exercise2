@@ -17,13 +17,7 @@ coverage html -d initial_decision_html
 
 
 # Check the operating system
-if [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
-    # Linux
-    PYTHON_EXECUTABLE="python3"
-elif [ "$(expr substr $(uname -s) 1 10)" = "MINGW32_NT" ]; then
-    # Windows
-    PYTHON_EXECUTABLE="python3.exe"
-fi
+PYTHON_EXECUTABLE="python"
 
 # Define the output file for both stdout and stderr
 output_file="initial_mutation_output.log"
