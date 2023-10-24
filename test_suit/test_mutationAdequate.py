@@ -56,11 +56,21 @@ class TestMutants(unittest.TestCase):
         self.assertEqual(Triangle.classify(1, -1, 1), Triangle.Type.INVALID)
         self.assertEqual(Triangle.classify(1, 1, -1), Triangle.Type.INVALID)
 
-    def try_bunch_of_zeros(self):
-        for i in range(-1, 1):
-            for j in range(-1, 1):
-                for k in range(-1, 1):
-                    self.assertEqual(Triangle.classify(i, j, k), Triangle.Type.INVALID)
+    def test_send_c_equals_0(self):
+        self.assertEqual(Triangle.classify(1, 1, 0), Triangle.Type.INVALID)
+        self.assertEqual(Triangle.classify(1, 2, 0), Triangle.Type.INVALID)
+
+    def test_sending_0(self):
+        self.assertEqual(Triangle.classify(0, 1, 1), Triangle.Type.INVALID)
+        self.assertEqual(Triangle.classify(1, 0, 1), Triangle.Type.INVALID)
+
+    def make_trian_equal_to_3(self):
+        self.assertEqual(Triangle.classify(1, 2, 3), Triangle.Type.INVALID)
+
+    def test_something(self):
+        self.assertEqual(Triangle.classify(1, 1.5, 1), Triangle.Type.ISOSCELES)
+        self.assertEqual(Triangle.classify(1.5, 1, 1), Triangle.Type.ISOSCELES)
+        self.assertEqual(Triangle.classify(1, 1, 1.5), Triangle.Type.ISOSCELES)
 
 
 if __name__ == "__main__":
