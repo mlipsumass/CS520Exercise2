@@ -21,7 +21,7 @@
     SyntaxHighlighter.all();
     window.setTimeout(function () {
         
-        $('.line.number28').attr('title', 'ROR');
+        $('.line.number42').attr('title', 'CRP');
         
     }, 0);
 </script>
@@ -35,24 +35,31 @@
 </div>
 <h3>Details</h3>
 <ul>
-    <li>module - <code><module 'isTriangle' from '/Users/patrickwalsh/dev/fall2023/CS520/CS520Exercise2/test_suit/isTriangle.py'></code></li>
-    <li><span class="label label-danger">survived</span></li>
+    <li>module - <code><module 'isTriangle' from './isTriangle.py'></code></li>
+    <li><span class="label label-success">killed</span> by <code>test_a_and_c_equal_to_b_invalid (test_mutationAdequate.TestMutants)</code></li>
     
-    <li>duration - 0.12 s</li>
+    <li>duration - 0.003 s</li>
     
     
-    <li>tests run - 1</li>
+    <li>tests run - 2</li>
     
 </ul>
+
+<h3>Exception traceback</h3>
+<pre>Traceback (most recent call last):
+  File "./test_mutationAdequate.py", line 42, in test_a_and_c_equal_to_b_invalid
+    self.assertEqual(Triangle.classify(3, 6, 3), Triangle.Type.INVALID)
+AssertionError: <Type.ISOSCELES: 3> != <Type.INVALID: 0>
+</pre>
 
 <h3>Mutations</h3>
 <ul>
     
-    <li>ROR - line 28</li>
+    <li>CRP - line 42</li>
     
 </ul>
 <h3>Mutant</h3>
-<pre class="brush: python; first-line: 1; highlight: [28]; toolbar: false;">from enum import Enum
+<pre class="brush: python; first-line: 1; highlight: [42]; toolbar: false;">from enum import Enum
 
 
 class Triangle:
@@ -66,9 +73,9 @@ class Triangle:
         EQUILATERAL = 2
         ISOSCELES = 3
     
-    
     @staticmethod
-    def classify(a, b, c):'''
+    def classify(a, b, c):
+        '''
         This static method does the actual classification of a triangle, given the lengths
         of its three sides.
         '''
@@ -79,7 +86,7 @@ class Triangle:
         
         if a == b:
             trian += 1
-        if a != c:
+        if a == c:
             trian += 2
         if b == c:
             trian += 3
@@ -93,7 +100,7 @@ class Triangle:
         if trian > 3:
             return Triangle.Type.EQUILATERAL
         
-        if (trian == 1 and a + b > c):
+        if (trian == 2 and a + b > c):
             return Triangle.Type.ISOSCELES
         elif (trian == 2 and a + c > b):
             return Triangle.Type.ISOSCELES

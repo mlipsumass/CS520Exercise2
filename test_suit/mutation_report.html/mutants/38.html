@@ -21,7 +21,7 @@
     SyntaxHighlighter.all();
     window.setTimeout(function () {
         
-        $('.line.number34').attr('title', 'ROR');
+        $('.line.number34').attr('title', 'LCR');
         
     }, 0);
 </script>
@@ -35,20 +35,27 @@
 </div>
 <h3>Details</h3>
 <ul>
-    <li>module - <code><module 'isTriangle' from '/Users/patrickwalsh/dev/fall2023/CS520/CS520Exercise2/test_suit/isTriangle.py'></code></li>
-    <li><span class="label label-danger">survived</span></li>
+    <li>module - <code><module 'isTriangle' from './isTriangle.py'></code></li>
+    <li><span class="label label-success">killed</span> by <code>test_a_and_b_equal_to_c_invalid (test_mutationAdequate.TestMutants)</code></li>
     
-    <li>duration - 0.119 s</li>
+    <li>duration - 0.003 s</li>
     
     
     <li>tests run - 1</li>
     
 </ul>
 
+<h3>Exception traceback</h3>
+<pre>Traceback (most recent call last):
+  File "./test_mutationAdequate.py", line 47, in test_a_and_b_equal_to_c_invalid
+    self.assertEqual(Triangle.classify(4, 3, 7), Triangle.Type.INVALID)
+AssertionError: <Type.SCALENE: 1> != <Type.INVALID: 0>
+</pre>
+
 <h3>Mutations</h3>
 <ul>
     
-    <li>ROR - line 34</li>
+    <li>LCR - line 34</li>
     
 </ul>
 <h3>Mutant</h3>
@@ -66,9 +73,9 @@ class Triangle:
         EQUILATERAL = 2
         ISOSCELES = 3
     
-    
     @staticmethod
-    def classify(a, b, c):'''
+    def classify(a, b, c):
+        '''
         This static method does the actual classification of a triangle, given the lengths
         of its three sides.
         '''
@@ -85,7 +92,7 @@ class Triangle:
             trian += 3
         
         if trian == 0:
-            if (a + b <= c or a + c >= b or b + c <= a):
+            if (a + b <= c and a + c <= b and b + c <= a):
                 return Triangle.Type.INVALID
             else:
                 return Triangle.Type.SCALENE
