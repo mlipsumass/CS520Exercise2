@@ -63,3 +63,7 @@ Although redundant test cases are inherently redundant, I would not remove the m
 
 ### Question 7
 > How many decision points did you find for the Control flow graph for normative cases (scalene triangle, equilateral triangle, and isosceles triangle) and exception cases (invalid sides and triangle inequality)? Did these findings help you to create a better test suite?
+
+Looking through the control flow graph, there were 10 normative cases for control flow, and 7 separate cases for exceptions, counting all possible routes using the decision points. These findings did in fact help create a better test suite as they helped create a top-level overview of the options the user had to flow through the program.
+
+With the top-level control flow view, it is more clear to see the path of the data and how the outputs mesh together.
