@@ -24,11 +24,42 @@ The two best practices satisfied by the triangle project that make it easier to 
 ### Question 4
 > Consider your mutation-adequate test suite and the triangle program. For any given program, why are some mutants not detectable?
 
+Some mutants were not detectable as they were solutions that would not make a difference inside of the program.
+
+For example, one of the mutations is shown below.
+
+```bash
+   - [#  36] DDL isTriangle: 
+--------------------------------------------------------------------------------
+  11:         SCALENE = 1
+  12:         EQUILATERAL = 2
+  13:         ISOSCELES = 3
+  14:     
+- 15:     @staticmethod
+- 16:     def classify(a, b, c):
++ 15:     def classify(\
++ 16:         a, b, c):
+  17:         '''
+  18:         This static method does the actual classification of a triangle, given the lengths
+  19:         of its three sides.
+  20:         '''
+--------------------------------------------------------------------------------
+[0.00303 s] survived
+```
+
+In this example, the `\` character simply moves the classify parameters to the next line, with no changes to the flow of the program. Therefore, there are no detectable changes through mutation tests.
+
 ### Question 5
 > What changes in the code coverage percentages and mutant detection rate did you observe when deleting (or commenting out) all assertions?
 
+When removing all assertions, there was a 100% survival rate of mutants.
+
 ### Question 6
 > Create a definition of “test case redundancy” based on code coverage or mutation analysis. Given your definition of test case redundancy, are some of the test cases in your test suites redundant? Given your definition of test case redundancy, would you remove redundant test cases? Briefly explain why or why not.
+
+Test case redundancy is a test case that would increase the coverage or mutation detection rate if there was not already a similar test case hitting the same lines of code.
+
+Although redundant test cases are inherently redundant, I would not remove the majority of them. This is under the possibility that developers update code in the program, and the possibility that some of these redundant test cases are not redundant.
 
 ### Question 7
 > How many decision points did you find for the Control flow graph for normative cases (scalene triangle, equilateral triangle, and isosceles triangle) and exception cases (invalid sides and triangle inequality)? Did these findings help you to create a better test suite?
