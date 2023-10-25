@@ -1,0 +1,293 @@
+commit 42e1c0bb082c86eaa98a17802330a446ec3f7226
+Author: Matt Lips <mlips@umass.edu>
+Date:   Wed Oct 25 11:25:58 2023 -0400
+
+    Added answers 2 and 3
+
+commit 889a23c73ae4fcfdb7419fd852c8097d0eb43f54
+Author: Patrick Walsh <pw4.2020@gmail.com>
+Date:   Wed Oct 25 09:56:15 2023 -0400
+
+    add question 7, cfg_figures.pdf
+
+commit 41d60d2948980ff22d345ec5ea2890085c79cb50
+Author: Patrick Walsh <pw4.2020@gmail.com>
+Date:   Tue Oct 24 21:44:26 2023 -0400
+
+    add to question 5, complete question 6 and question 4
+
+commit 862ab6fcc7bbdc191e55ea9a0b27298421acc4e8
+Author: Patrick Walsh <pw4.2020@gmail.com>
+Date:   Tue Oct 24 17:31:52 2023 -0400
+
+    format answers.md, write answer to question 1
+
+commit 9e0bf06ddf3a6acd9fefc5d138c6a7cb85868aca
+Merge: 92763ef 3885d08
+Author: Patrick Walsh <pw4.2020@gmail.com>
+Date:   Tue Oct 24 16:57:27 2023 -0400
+
+    merged feature/pwalsh-branch
+
+commit 92763ef0c466937aa7798da12d8a34dd1293c6a1
+Merge: 558c8ff e78821c
+Author: Patrick Walsh <pw4.2020@gmail.com>
+Date:   Tue Oct 24 16:50:59 2023 -0400
+
+    Merge branch 'main' of https://github.com/mlipsumass/CS520Exercise2
+
+commit 3885d084acf7ead0084999d5c5b244075619aa87
+Author: Patrick Walsh <pw4.2020@gmail.com>
+Date:   Tue Oct 24 16:50:26 2023 -0400
+
+    add mutation_report.html
+
+commit e34d2788cf49591f7df377cbfa8a96f688c62c3f
+Author: Patrick Walsh <pw4.2020@gmail.com>
+Date:   Tue Oct 24 16:49:47 2023 -0400
+
+    update test_mutationAdequate.py to be 91.2% coverage
+
+commit 6463ed836941d4593de60a538d066026e9577357
+Author: Patrick Walsh <pw4.2020@gmail.com>
+Date:   Tue Oct 24 10:31:06 2023 -0400
+
+    get mutation detection rate at 82.4 percent
+
+commit bc11d4830175eb3905ff0e535e8c73ab057aaff3
+Author: Patrick Walsh <pw4.2020@gmail.com>
+Date:   Tue Oct 24 08:47:32 2023 -0400
+
+    configure test_mutationAdequate.py to be 94% code coverage
+
+commit ef1e70557dbb057cf0dc5fe0b8c7b07a98c20f53
+Author: Patrick Walsh <pw4.2020@gmail.com>
+Date:   Fri Oct 20 14:10:46 2023 -0400
+
+    create personal branch to ensure no merge issues with Matt
+
+commit e78821cbcc8f4adc1ffec7df98056de125fd78a2
+Author: Matt Lips <mlips@umass.edu>
+Date:   Thu Oct 19 11:39:19 2023 -0400
+
+    Added decision coverage
+
+commit 8bd0afacb4412d91ff37d687ce42c5925808bd7f
+Author: Matt Lips <mlips@umass.edu>
+Date:   Thu Oct 19 11:25:28 2023 -0400
+
+    Added equilateral statement test
+
+commit 558c8ffcf75b76bca92d87f1d8c1162f98730de8
+Author: Patrick Walsh <pw4.2020@gmail.com>
+Date:   Thu Oct 19 11:08:34 2023 -0400
+
+    add answers.md
+
+commit 8f45b0c76072aee9a988484dbb94ee619093cde6
+Author: Matt Lips <mlips@umass.edu>
+Date:   Thu Oct 19 11:05:18 2023 -0400
+
+    Created test statement coverage with >95% accuracy
+
+commit 60522ce98827d5c77955ebed2e13ff15002c052b
+Author: Patrick Walsh <pw4.2020@gmail.com>
+Date:   Thu Oct 19 10:29:26 2023 -0400
+
+    add .gitignore
+
+commit bf5f3f018095a6a9ddf17919bcd4e311f6caecc7
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Oct 18 21:50:23 2023 -0400
+
+    file update
+
+commit 6e9ee6cea352ff7208fd1e6e7aed265cec647422
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Oct 18 21:40:55 2023 -0400
+
+    random control introduced
+
+commit 681470953a6c502140ff3191a0599d1d77ebb787
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Oct 18 21:40:28 2023 -0400
+
+    Randomization control introduced
+
+commit 2e669dda3ff8e84563120479a0329c216dc7810d
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Oct 18 21:40:14 2023 -0400
+
+    readme update with venv
+
+commit a616c72e3b4af58f81f0ddda4a5300463e0f9b2a
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Oct 18 19:30:07 2023 -0400
+
+    OS independent update
+
+commit 2fc2aabc96d47005c9d9212672d7de85da4e3985
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Oct 18 19:29:37 2023 -0400
+
+    Set random seed
+
+commit 80138cb39bf33d7505a0db8cbbed8c045229ea50
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Oct 18 17:55:30 2023 -0400
+
+    Initial Test suit update
+
+commit bb6b9022b271d412688008af64934bf4145be4b4
+Author: Heather Conboy <hconboy@cs.umass.edu>
+Date:   Wed Oct 18 16:36:36 2023 -0400
+
+    Update README.md
+    
+    The Coverage tool is actually using decision (i.e. branch) coverage and not condition coverage. Updated all of the directory/file names appropriately.
+
+commit 54d91d5565d40653fd644a27f68ee7597605612b
+Author: Heather Conboy <hconboy@cs.umass.edu>
+Date:   Wed Oct 18 16:34:23 2023 -0400
+
+    Update README.md
+    
+    Fixed the formatting for the unittest tool font.
+
+commit f4a19393e28ed79ea5b3867aac5f7aed56bc4cac
+Author: Heather Conboy <hconboy@cs.umass.edu>
+Date:   Wed Oct 18 16:33:56 2023 -0400
+
+    Update README.md
+    
+    Added more details about unittest.
+
+commit adddae52858fecd9ba3cd41f356e63bb508f0502
+Author: Heather Conboy <hconboy@cs.umass.edu>
+Date:   Wed Oct 18 16:32:36 2023 -0400
+
+    Update test.sh
+    
+    Fixed a typo in the branch coverage folder name.
+
+commit 6cd7a9884311512dbf6e555c9e215ba98b8eb1a7
+Author: Heather Conboy <hconboy@wpa089.wpanet.cs.local>
+Date:   Wed Oct 18 16:31:14 2023 -0400
+
+    The Coverage tool is actually using decision (i.e. branch) coverage and not condition coverage. Updated all of the directory/file names appropriately.
+
+commit 399dfe99476effdc9bd967e8dc5c7e4a0d20867a
+Author: Heather Conboy <hconboy@cs.umass.edu>
+Date:   Wed Oct 18 14:35:20 2023 -0400
+
+    Update test.sh
+    
+    Switched to using Unix-style python commands instead of Windows ones.
+
+commit ecc517e56bab5e54ee0e6969b7fc1ec55cbf6b24
+Author: Heather Conboy <hconboy@cs.umass.edu>
+Date:   Wed Oct 18 14:29:28 2023 -0400
+
+    Update README.md
+    
+    Switched to using python 3 commands.
+    
+    Consistently used the term CFG instead of control flow diagram.
+
+commit 801a59b83093605f4b8b8da7918a9671535113aa
+Author: Heather Conboy <hconboy@cs.umass.edu>
+Date:   Wed Oct 18 14:22:25 2023 -0400
+
+    Update mutation.sh
+    
+    Switched to using Unix-style commands instead of Window ones.
+
+commit 4a14aa423d7a0139dbfeb5378ca62f3b05600a35
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Tue Oct 17 07:45:19 2023 -0400
+
+    Readme Image Add
+
+commit daa1a7338e03e4b278c032ea747ea2b8d93df4c8
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Tue Oct 17 07:44:52 2023 -0400
+
+    Initial test script add
+
+commit 07725aba632093c15c55c07fbd4f0d98f0393c6c
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Tue Oct 17 07:44:13 2023 -0400
+
+    initial test case update
+
+commit 7d22a267d98daae323418cf0f0fb0f40955dab06
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Tue Oct 17 07:43:48 2023 -0400
+
+    shell scripts update
+
+commit 5fda3f0afdf92511ab10abba10022df448fabacc
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Tue Oct 17 07:43:18 2023 -0400
+
+    CFG file update
+
+commit 3a3bd12d874689c66fa80b15f950b99bed08ac58
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Tue Oct 17 07:42:58 2023 -0400
+
+    Readme Update
+
+commit 1f16bde5ccbb8932f2a5e4633a984794f116e1b8
+Author: Heather Conboy <hconboy@cs.umass.edu>
+Date:   Sun Oct 15 13:39:12 2023 -0400
+
+    Update README.md
+    
+    Added another instruction for how to open a CFG file (in SVG format) in a web browser to visualize that CFG.
+
+commit fb68286a5364bdffe2bbaead79d1d54c1b59e6c2
+Author: Heather Conboy <hconboy@cs.umass.edu>
+Date:   Sun Oct 15 13:27:04 2023 -0400
+
+    Update README.md
+    
+    Added the URL for the py2cfg library.
+
+commit ad1b8f9199d61704dc991ca87565401a7cc0e2df
+Author: Heather Conboy <hconboy@cs.umass.edu>
+Date:   Sun Oct 15 13:23:50 2023 -0400
+
+    Update README.md
+    
+    Switched to always using pip3 instead of pip.
+
+commit 4f7e44818f58b9040ce8ec8e3f6c66fb035b7946
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Jul 19 16:01:03 2023 -0400
+
+    Shell scripts added
+
+commit 000560d899d701f22fa7e9bdc719832bfe288112
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Jul 19 16:00:28 2023 -0400
+
+    Source code files added
+
+commit a328b7fbb3aeeb8898454151cd19615670419b43
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Jul 19 15:58:04 2023 -0400
+
+    Required python packages for mutation-coverage analysis
+
+commit f561869f9764e986952268e952ada708d1c3779d
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Jul 19 15:56:29 2023 -0400
+
+    Readme Update
+
+commit 6d96c70efcaf31c2f78987a06ec302eb18a52c65
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Jul 19 14:20:42 2023 -0400
+
+    Initial commit
