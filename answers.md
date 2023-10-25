@@ -18,8 +18,12 @@ The two best practices satisfied by the triangle project that make it easier to 
 ### Question 2
 > For the isTriangle class with the initial test suite, what is the statement (a.k.a. line) coverage percentage? The decision (a.k.a. branch) coverage percentage? The mutant detection rate?
 
+In the initial test suite for the isTriangle class has 65% initial line coverage, 53% initial decision coverage, and 0% mutant detection rate.
+
 ### Question 3
 > Did your approach to writing unit tests differ between developing a coverage-adequate test suite and developing a mutation-adequate test suite? Briefly explain why or why not.
+
+Our approaches to writing unit tests between coverage-adequate suite and mutation-adequate suite had some inherent differences as each of us programmed on these files separately. One difference is in the amount of tests, since in the code coverage tests there are a small and finite amount of lines and branches, it does not take many tests to get to 100% code coverage. However, there are significantly more possiblilities of mutations in a program and so a higher number of test cases are needed to reach a high mutation detection rate. Aside from this difference, there are also similarities in the types of tests being made because we are of course testing the same program. So in both test suites we test for inalid lengths, isosceles, equilateral, and equal a_b, b_c, a_c side lengths.
 
 ### Question 4
 > Consider your mutation-adequate test suite and the triangle program. For any given program, why are some mutants not detectable?
